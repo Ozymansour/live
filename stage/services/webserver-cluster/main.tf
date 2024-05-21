@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 module "webserver_cluster" {
-  source = "https://github.com/Ozymansour/modules/tree/main/services/webserver-cluster?ref=0.0.1"
+  source = "github.com/Ozymansour/modules//services/webserver-cluster?ref=v0.0.1"
 
   cluster_name = "webservers-stage"
   db_remote_state_bucket = "terraform-state-134679"
